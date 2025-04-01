@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
+  min-height: -webkit-fill-available;
+}
+
+#__next {
+  height: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  --toastify-toast-width: 25rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  html {
+    @apply text-body;
+  }
+
+  @media screen(md) {
+    html {
+      @apply text-body-md;
+    }
+  }
+  @media screen(lg) {
+    html {
+      @apply text-body-lg;
+    }
+  }
+  @media screen(xl) {
+    html {
+      @apply text-body-xl;
+    }
+  }
+
+  @font-face {
+    font-family: 'system';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+      format('woff');
+    font-display: swap;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+    margin-left: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #c9c9c9;
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #787ed4;
+  }
+}
+
+.Toastify__toast-body {
+  font-family: 'system';
+}

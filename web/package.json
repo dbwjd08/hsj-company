@@ -1,0 +1,72 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "codegen": "npx openapi-codegen gen yuppie",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.10.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@headlessui/react": "^1.7.2",
+    "@headlessui/tailwindcss": "^0.1.1",
+    "@hookform/resolvers": "^2.9.7",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tanstack/react-query": "^4.1.0",
+    "@types/react-table": "^7.7.15",
+    "apexcharts": "^3.42.0",
+    "eslint-config-prettier": "^9.0.0",
+    "firebase": "^9.9.3",
+    "firebase-tools": "^12.4.8",
+    "global": "^4.4.0",
+    "immer": "^9.0.15",
+    "next": "12.2.5",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "react": "18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-confirm": "^0.2.3",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.34.2",
+    "react-markdown": "^8.0.3",
+    "react-range": "^1.8.14",
+    "react-table": "^7.8.0",
+    "react-toastify": "^9.0.8",
+    "recoil": "^0.7.5",
+    "recoil-persist": "^5.1.0",
+    "ts-debounce": "^4.0.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.10.0",
+    "@openapi-codegen/cli": "^1.5.2",
+    "@openapi-codegen/typescript": "^5.0.0",
+    "@svgr/webpack": "^6.3.1",
+    "@types/node": "18.7.2",
+    "@types/react": "18.0.17",
+    "@types/react-confirm": "^0.1.4",
+    "@types/react-datepicker": "^4.4.2",
+    "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.8",
+    "babel-plugin-macros": "^3.1.0",
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "twin.macro": "^3.0.0-rc.3",
+    "typescript": "4.7.4"
+  }
+}
